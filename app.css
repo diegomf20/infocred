@@ -1,0 +1,182 @@
+*{
+    font-family: "Ebrima";
+}
+html,body{
+    margin: 0;
+    height: 100%;
+}
+img{
+    width: 100%;
+}
+.navbar-brand{
+    width: 200px;
+}
+.portada{
+    position: relative;
+    height: 100%;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* background: ; */
+    background-image:linear-gradient(to bottom,rgba(5,51,80,.6) 0,rgba(5,51,80,.6) 100%), url('./portada.jpg');
+}
+.portada-header {
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    color: #fff;
+    height: 200px;
+}
+
+.portada-header h1{
+    font-size: 56px;
+    font-weight: 700;
+}
+
+.navbar{
+    padding-top: 20px;
+    background-color: transparent;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+.navbar .navbar-toggler{
+    color: #fff!important;
+    border: 1px solid #fff;
+}
+.navbar-nav{
+    margin-left: auto;
+}
+.navbar-nav a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 12px;
+}
+p{
+    text-align: justify;
+    font-size: 17.5px;
+}
+h3 {
+    font-size: 1.70rem;
+    font-weight: 900
+}
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1050px;
+    }
+}
+.servicios{
+    padding: 60px 0;
+}
+.logo-azul{
+    margin-top: 120px;
+}
+.mail{
+    background-color: #111;
+    color: #fff;
+    padding: 20px 0;
+}
+.titulo{
+    font-size: 40px;
+    font-weight: 700;
+}
+.card-mail{
+    display: flex;
+    border-radius: 10px;
+    border: 0px;
+}
+.card-mail .izquierda{
+    background-color: #053350;
+    width: 40%;
+    position: relative;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.card-mail .derecha{
+    width: 60%;
+    background-color: #fff;
+    color: #777;
+    font-weight: 700;
+    padding: 10px 25px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card-mail p{
+    font-size: 14px;
+}
+.form-group{
+    position: relative;
+}
+.form-icon{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 32px;
+    padding: 2px 0;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #053350;
+}
+.form-icon img{
+    height: 14px;
+    width: auto;
+}
+.form-control{
+    padding-left: 40px;
+}
+.form-control::placeholder{
+    text-align: center;
+}
+.btn-primary{
+    background-color: #053350;
+    border: 1px solid #053350;
+}
+
+.izquierda img{
+    position: absolute;
+    bottom: 0;
+}
+.contactenos{
+    background-color: #053350;
+    padding: 20px 0;
+    color: #fff;
+}
+.contactenos p{
+    position: relative;
+    padding-left: 10px 
+}
+.icono{
+    display: inline-flex;
+    left: 0;
+    position: absolute;
+    height: 22px;
+    width: 24px;
+    padding: 5px 0;
+    text-align: center;
+    border-radius: 6px;
+    background-color: #fff;
+    text-align: center
+}
+.icono img{
+    height: 12px;
+    width: auto;
+    margin: 0 auto;
+}
+.item-contactanos{
+    position: relative;
+    padding-left: 35px;
+}
+.item-contactanos.vacio .icono{
+    padding: 0;
+    background-color: transparent;
+}
+.item-contactanos.vacio .icono img{
+    height: 20px;
+    width: auto;
+}
+footer{
+    background-color: #111;
+    color: #fff;
+}
