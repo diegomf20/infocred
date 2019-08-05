@@ -23,7 +23,7 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">SERVICIOS</a>
+                            <a class="nav-link" href="#servicios">SERVICIOS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">CONTÁCTENOS</a>
@@ -39,15 +39,15 @@
             </div>
         </div>
     </div>
-    <div class="servicios">
+    <div id="servicios" class="servicios">
         <div class="container">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-md-7 col-sm-12">
                     <h3>Especialista en Educación, Cobranzas, Marketing</h3>
                     <p class="mb-4">Organización con mas de 20 años de experiencia en principales y estratégicas áreas como Finanzas: Cobranzas. Administración: Créditos, Tesorería; Marketing: Posicionamiento de marca, merchandising, ventas, asesoría.</p>
                     <p>Soluciones y servicios en segmentos comerciales: Tecnología aplicada a educación, bien utilizada mejora la capacidad cognitiva del estudiante. Cobranza preventiva y vencida, negociación de deuda, mejorar el Flujo Efectivo de su negocio. Posicionamiento de marcas / productos, campañas de ingreso o reingreso al mercado, merchandising, plan de ventas.</p>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-md-5 offset-sm-3 col-sm-5">
                     <img class="logo-azul" src="logo-azul.png" alt="Logo Azul">
                 </div>
             </div>
@@ -111,7 +111,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-4 offset-sm-1">
+                <div class="col-sm-6 col-lg-4 offset-lg-1">
                     <div class="item-contactanos mb-1">
                         <div class="icono">
                             <img src="icono/solido/user.png" alt="icono">
@@ -125,7 +125,7 @@
                         R&C: Asociación EIRL
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6 col-lg-4">
                     <div class="item-contactanos mb-1">
                         <div class="icono my-3">
                             <img src="icono/solido/mail.png" alt="icono">
@@ -136,7 +136,7 @@
                         juanroseroparedes@gmail.com
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-6 col-lg-3">
                     <div class="item-contactanos vacio mb-1">
                         <div class="icono">
                             <img src="icono/solido/whatsapp.png" alt="icono">
@@ -162,8 +162,26 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        // $(function(){
+            $('a[href^="#"]').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+                && location.hostname == this.hostname) {
+                    var $target = $(this.hash);
+                    $target = $target.length && $target || $('[name=' + this.hash.slice(1) +']');
+                    if ($target.length) {
+                        var targetOffset = $target.offset().top;
+                        $('html,body').animate({scrollTop: targetOffset}, 1000);
+                        $('.navbar-toggler').click();
+                        return false;
+                }
+
+            }
+            });
+        // });
+    </script>
 </body>
 </html>
