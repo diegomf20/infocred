@@ -152,6 +152,16 @@ h3 {
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
+@media (max-width: 768px){
+    .izquierda{
+        display: none;
+    }
+    .derecha{
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        border-radius: 10px;
+    }
+}
 .card-mail p{
     font-size: 14px;
 }
