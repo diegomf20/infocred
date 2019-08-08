@@ -245,3 +245,10 @@ footer{
         display: none;
     }
 }
+.error .form-control{
+    border-color: red;
+}
+.error span{
+    color: red;
+    font-size: 12px;
+}

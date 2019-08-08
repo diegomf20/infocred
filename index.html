@@ -16,7 +16,7 @@
     <div class="portada">
         <nav class="navbar navbar-expand-lg container">
             <a class="navbar-brand" href="#">
-                <img src="logo-blanco.png" alt="">
+                <img src="img/logo-blanco.png" alt="">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -33,7 +33,7 @@
             </div>
         </nav>      
         <div class="portada-item show">
-            <div class="portada-imagen fade" style="background-image: url('./portada-1.jpg')"></div>
+            <div class="portada-imagen fade" style="background-image: url('./img/portada-1.jpg')"></div>
             <div class="portada-header">
                 <div class="container">
                     <h1>SERVICIOS Y SOLUCIONES EN:</h1>
@@ -42,7 +42,7 @@
             </div>
         </div>
         <div class="portada-item">
-            <div class="portada-imagen fade" style="background-image: url('./portada-2.jpg')"></div>
+            <div class="portada-imagen fade" style="background-image: url('./img/portada-2.jpg')"></div>
             <div class="portada-header">
                 <div class="container">
                     <h1>SERVICIOS Y SOLUCIONES EN:</h1>
@@ -51,7 +51,7 @@
             </div>
         </div>
         <div class="portada-item">
-            <div class="portada-imagen fade" style="background-image: url('./portada-3.jpg')"></div>
+            <div class="portada-imagen fade" style="background-image: url('./img/portada-3.jpg')"></div>
             <div class="portada-header">
                 <div class="container">
                     <h1>SERVICIOS Y SOLUCIONES EN:</h1>
@@ -69,7 +69,7 @@
                     <p>Soluciones y servicios en segmentos comerciales: Tecnología aplicada a educación, bien utilizada mejora la capacidad cognitiva del estudiante. Cobranza preventiva y vencida, negociación de deuda, mejorar el Flujo Efectivo de su negocio. Posicionamiento de marcas / productos, campañas de ingreso o reingreso al mercado, merchandising, plan de ventas.</p>
                 </div>
                 <div class="col-md-5 hidden-sm">
-                    <img class="logo-azul" src="logo-azul.png" alt="Logo Azul">
+                    <img class="logo-azul" src="./img/logo-azul.png" alt="Logo Azul">
                 </div>
             </div>
         </div>
@@ -81,43 +81,47 @@
                     <h4 class="text-center mb-3"><b>Comunícate con nosotros:</b></h4>
                     <div class="card-mail">
                         <div class="izquierda">
-                            <img src="mail.png" alt="">
+                            <img src="./img/mail.png" alt="">
                         </div>
                         <div class="derecha">
                             <p class="text-center">Llena el formulario con tus datos para recibir en tu correo información.</p>
-                            <div class="form-group mb-1">
-                                <div class="form-icon">
-                                    <img src="icono/lineal/user.png" alt="">
+                            <form id="form-enviar" class="row">
+                                <div class="col-12">
+                                    <div class="form-group mb-1">
+                                        <div class="form-icon">
+                                            <img src="icono/lineal/user.png" alt="">
+                                        </div>
+                                        <input name="nombre" type="text" class="form-control form-control-sm" placeholder="Nombre">
+                                    </div>
+                                    <div class="form-group mb-1">
+                                        <div class="form-icon">
+                                            <img src="icono/lineal/user-group.png" alt="">
+                                        </div>
+                                        <input name="empresa" type="text" class="form-control form-control-sm" placeholder="Empresa">
+                                    </div>
+                                    <div class="form-group mb-1">
+                                        <div class="form-icon">
+                                            <img src="icono/lineal/celular.png" alt="">
+                                        </div>
+                                        <input name="telefono" type="text" class="form-control form-control-sm" placeholder="Telefono">
+                                    </div>
+                                    <div class="form-group mb-1">
+                                        <div class="form-icon">
+                                            <img src="icono/lineal/mail.png" alt="">
+                                        </div>
+                                        <input name="mail" type="text" class="form-control form-control-sm" placeholder="Correo">
+                                    </div>
+                                    <div class="form-group mb-2">
+                                        <div class="form-icon">
+                                            <img src="icono/lineal/mensaje.png" alt="">
+                                        </div>
+                                        <textarea name="descripcion" rows="3" class="form-control form-control-sm" placeholder="Descripción"></textarea>
+                                    </div>
+                                    <div class="form-group mb-1 text-center">
+                                        <button id="enviar" class="btn btn-primary"><b>ENVIAR</b></button>
+                                    </div>
                                 </div>
-                                <input type="text" class="form-control form-control-sm" placeholder="Nombre">
-                            </div>
-                            <div class="form-group mb-1">
-                                <div class="form-icon">
-                                    <img src="icono/lineal/user-group.png" alt="">
-                                </div>
-                                <input type="text" class="form-control form-control-sm" placeholder="Empresa">
-                            </div>
-                            <div class="form-group mb-1">
-                                <div class="form-icon">
-                                    <img src="icono/lineal/celular.png" alt="">
-                                </div>
-                                <input type="text" class="form-control form-control-sm" placeholder="Telefono">
-                            </div>
-                            <div class="form-group mb-1">
-                                <div class="form-icon">
-                                    <img src="icono/lineal/mail.png" alt="">
-                                </div>
-                                <input type="text" class="form-control form-control-sm" placeholder="Correo">
-                            </div>
-                            <div class="form-group mb-2">
-                                <div class="form-icon">
-                                    <img src="icono/lineal/mensaje.png" alt="">
-                                </div>
-                                <textarea rows="3" class="form-control form-control-sm" placeholder="Descripción"></textarea>
-                            </div>
-                            <div class="form-group mb-1 text-center">
-                                <button class="btn btn-primary"><b>ENVIAR</b></button>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -128,7 +132,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-6 offset-3 col-md-2 offset-md-1 mb-3">
-                    <img src="logo-blanco.png" alt="">
+                    <img src="./img/logo-blanco.png" alt="">
                 </div>
             </div>
             <div class="row">
@@ -187,6 +191,83 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
+        var require=[
+            {
+                name: "nombre",
+                validation: [
+                    ["required","Nombre necesario"]
+                ]
+            },
+            {
+                name: "empresa",
+                validation: [
+                    ["required","Empresa necesario"]
+                ]
+            },
+            {
+                name: "telefono",
+                validation: [
+                    ["required","Telefono necesario"]
+                ]
+            },
+            {
+                name: "mail",
+                validation: [
+                    ["required","Mail necesario"],
+                    ["email","Ingrear un E-mail valido"]
+                ]
+            },
+            {
+                name: "descripcion",
+                validation: [
+                    ["required","Descripción necesaria"]
+                ]
+            },
+
+        ];
+        function validation_form() {
+            var v_continue=true;
+            $('.form-group').removeClass('error');
+            $('.form-group span').remove();
+            for (let i = 0; i < require.length; i++) {
+                const data = require[i];
+                for (let j = 0; j < data.validation.length; j++) {
+                    const validation = data.validation[j];
+                    var error=false;
+                    switch (validation[0]) {
+                        case "required":
+                            if ($('[name='+data.name+']').val()=="") {
+                                $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[1]+'</span>');                        
+                                error=true;
+                            }
+                            break;
+                        case "email":
+                            if (($('[name='+data.name+']').val()).search('@')==-1) {
+                                $('[name='+data.name+']').parent().addClass('error').append('<span>'+validation[1]+'</span>');                        
+                                error=true;
+                            }
+                            break;
+                    }
+                    if (error) {
+                        v_continue=false;
+                        break;
+                    };
+                }
+                
+            }
+            return v_continue;
+        }
+        $('#form-enviar').submit(function (e) {
+            e.preventDefault();
+            if (validation_form()) {
+                $.post( "mail.php", $('#form-enviar').serialize(), function( data ) {
+                    if(data.status=="OK"){
+                        alert('Mensaje enviado.');
+                        $('#form-enviar')[0].reset();
+                    }
+                });    
+            }
+        });
         // $(function(){
             $('a[href^="#"]').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
