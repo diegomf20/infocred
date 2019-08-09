@@ -101,14 +101,20 @@ img{
     max-width: 500px;
 }
 .portada-header h2{
-    font-size: 20px;
+    font-size: 30px;
 }
 @media (min-width: 768px){
     .portada-header h1{
         font-size: 64px;
     }
 }
-
+.card h3 i{
+    color: #053350;
+    font-size: 80px;
+}
+.card{
+    height: 100%;
+}
 p{
     text-align: justify;
     font-size: 16px;
