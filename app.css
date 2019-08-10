@@ -17,6 +17,18 @@ img{
     border-bottom: 1px solid #fff;
     color: #fff;
 }
+@media (max-width: 768px){
+    .navbar{
+        background-color: #053350;
+        /* position: relative; */
+    }
+    .navbar.container{
+        max-width: 100%;
+    }
+    .portada-item{
+        margin-top:80px;
+    }
+}
 .navbar-brand{
     width: 220px;
 }
@@ -35,8 +47,8 @@ img{
 .portada{
     overflow: hidden;
     position: relative;
-    height: 400px;
-    min-height: 400px;
+    height: 100%;
+    min-height: 500px;
 }
 @media (min-width: 768px){
     .portada{
@@ -90,7 +102,7 @@ img{
 .portada-imagen{height: 100%;width: 100%;position: absolute;z-index: -1;background-repeat: no-repeat;background-position: center;background-size: cover}
 .portada-item .portada-header {
     position: absolute;
-    bottom: 20%;
+    bottom: 25%;
     color: #fff;
     height: 200px;
     width: 100%;
@@ -114,6 +126,9 @@ img{
 }
 .card{
     height: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
 }
 p{
     text-align: justify;
